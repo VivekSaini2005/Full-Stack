@@ -1,0 +1,42 @@
+*{
+    margin:0;
+}
+.container{
+    background-color: pink;
+    height: 700px;
+    width: auto;
+    display: flex;
+    /* align-items: baseline; */
+    font-weight: 900;
+    /* justify-content: center;
+    align-items: center; */
+}
+.box1{
+    background-color: red;
+}
+.box2{
+    background-color: blue;
+}
+.box3{
+    background-color: green;
+    
+}
+.box4{
+    background-color: orange;
+}
+.Box{
+    width: 150px;
+    height: 150px;
+    border: 4px black solid;
+    margin:2px;
+}
+
+/* .first{
+    margin: 10px;
+    font-size: 50px;
+}
+
+.second{
+    font-size: 25px;
+} */
+

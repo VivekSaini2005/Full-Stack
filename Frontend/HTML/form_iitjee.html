@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="url_server">
+        <fieldset>
+            <legend><h1>IIT JEE Registration Form</h1></legend>
+        <label for="nid">Full Name: </label>
+        <input type="text" id="nid" name="nid" value="">
+        <br>
+        <br>
+        <label for="eid">Email: </label>
+        <input type="email" id="eid" name="eid" value="">
+        <br>
+        <br>
+        <label for="passid">Password: </label>
+        <input type="password" id="passid" name="passid" value="">
+        <br>
+        <br>
+        <label>Gender: </label>
+        <input type="radio" id="male" name="gender" value = "Male">
+        <label for="male">Male </label>
+        <input type="radio" id="female" name="gender" value = "Female">
+        <label for="female">Female </label>
+        <input type="radio" id="other" name="gender" value = "Other">
+        <label for="other">Other</label>
+        <br>
+        <br>
+        <label for="dobid">Date of Birth: </label>
+        <input type="date" id="dobid" name="dobid" value="" min="2001-01-01" max="2020-12-31">
+        <br>
+        <br>
+        <label for="schid">School Name: </label>
+        <input type="text" id="schid" name="schid" value="">
+        <br>
+        <br>
+        <label for="boardhid">Board: </label>
+        <select id="boardhid">
+            <option value="" disabled selected>Select Your Board</option>
+            <option value="CBSE">CBSE Board</option>
+            <option value="UP">UP Board</option>
+            <option value="ICSE">ICSE Board</option>
+        </select>
+        <br>
+        <br>
+        <label for="yearid">Year of Passing: </label>
+        <input type="number" id="yearid" name="yearid" value="" min="2020" max="2028">
+        <br>
+        <br>
+        <label for="centerid">Exam-Center: </label>
+        <select id="centerid">
+            <option value="" disabled selected>Select Center</option>
+            <option value="MB">Moradabad</option>
+            <option value="AMR">Amroha</option>
+            <option value="KNP">Kanpur</option>
+        </select>
+        <br>
+        <br>
+        <button>Register</button>
+        </fieldset>
+    </form>
+    
+</body>
+</html>

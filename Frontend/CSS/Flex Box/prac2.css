@@ -1,0 +1,18 @@
+body {
+  background-color: white;
+  font-size: 20px;
+}
+/* Tablet ke liye */
+@media (min-width:701px) and (max-width: 900px) {
+  body {
+    color: pink;
+    font-size: 18px;
+  }
+}
+/* Mobile ke liye */
+@media (max-width: 768px) {
+  body {
+    color: skyblue;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Earth Orbit Animation</title>
+<style>
+    /* Center everything in the screen */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: black;
+    }
+
+    /* Orbit container (just for positioning Sun & Earth) */
+    .orbit {
+        position: relative;
+        width: 600px;     /* Ellipse width */
+        height: 400px;    /* Ellipse height */
+    }
+
+    /* The Sun at the center */
+    .sun {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 80px;
+        height: 80px;
+        background: yellow;
+        border-radius: 50%;
+        transform: translate(-50%, -50%); /* Center Sun in orbit container */
+        box-shadow: 0 0 40px yellow;       /* Glow effect */
+    }
+
+    /* The Earth */
+    .earth {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 40px;
+        height: 40px;
+        background: dodgerblue;
+        border-radius: 50%;
+        transform-origin: -300px 0; /* Orbit radius in X direction */
+        animation: ellipseOrbit 6s linear infinite;
+    }
+
+    /* Animation for Earth's elliptical orbit + self rotation */
+    @keyframes ellipseOrbit {
+        from {
+            /* First rotate for revolution, then translate for orbit radius,
+               scaleY to squash into ellipse, and final rotate for self-spin */
+            transform: rotate(0deg) translateX(300px) rotate(0deg);
+        }
+        to {
+            transform: rotate(360deg) translateX(300px) rotate(-360deg);
+        }
+    }
+</style>
+</head>
+<body>
+
+    <!-- Orbit container -->
+    <div class="orbit">
+        <!-- Sun at center -->
+        <div class="sun"></div>
+        <!-- Earth revolving -->
+        <div class="earth"></div>
+    </div>
+
+</body>
+</html>

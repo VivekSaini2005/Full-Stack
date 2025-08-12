@@ -1,0 +1,30 @@
+p{
+    background-color: burlywood;
+    text-align: center;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    /* border-width: 5px;
+    border-color: black;
+    border-style: solid; */
+    border: 5px black solid;
+    margin: 20px;
+}
+
+h2{
+    background-color:blanchedalmond;
+    border-left-width: 5px;
+    border-left-style: solid;
+    border-left-color: red;
+    border-top: 5px solid green;
+}
+.card{
+    background-color: rgb(100, 197, 100);
+}
+button:hover{
+    color:blue;
+    background-color: rgb(1, 255, 1);
+    transform: scale(1.2);
+    transition: transform 0.1s ease-out;
+    box-shadow: 0 5px 5px;
+}

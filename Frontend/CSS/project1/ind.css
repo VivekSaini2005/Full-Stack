@@ -1,0 +1,153 @@
+.container{
+    display: inline-block;
+    border: 10px solid #fcffdd;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: relative;
+    
+}
+.Box{
+    display: inline-block;
+}
+.img{
+    height: 250px;
+    width: auto;
+    border-radius: 20px;
+}
+body{
+    background-color: #fcffdd;
+}
+.container:hover{
+    background-color: white;
+    border-color: white;
+    cursor: pointer;
+    box-shadow: 0px 1px 1px;
+    
+}
+
+.resturant_rat{
+    background-color: green;
+    border-radius: 5px;
+    padding: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 2px;
+    position: absolute;
+    right: 5px;
+}
+
+.food_amt{
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 2px;
+    position: absolute;
+    right: 5px;
+}
+
+.loc_dist{
+    border-radius: 5px;
+    padding: 2px;
+    margin-top: 2px;
+    position: absolute;
+    right: 5px;
+}
+
+.loc_dist{
+    font-weight: 50;
+}
+.food,.loc_name{
+    font-size: 15px;
+    color:rgb(67, 67, 67)
+}
+
+.img, .food, .resturant,.loc{
+    padding: 3px;
+}
+
+.off{
+    font-size: 20px;
+    color: white;
+    background-color: rgba(218, 43, 16, 0.6);
+    position: absolute;
+    bottom: 90px;
+    left: 7px;
+}
+
+.resturant_rat{
+    color:white;
+
+}
+
+.resturant_name{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+*{
+    margin:0;
+}
+.head{
+    background-color: white;
+}
+
+.first{
+    margin-left: 500px;
+}
+
+.zomato{
+    color:red;
+    font-size: 25px;
+}
+
+.searching{
+    margin-left:20px;
+    width: 200px;
+    height: 20px;
+    position: relative;
+    bottom: 10px;
+}
+
+button{
+    height: 20px;
+    width: 60px;
+    position: relative;
+    bottom: 10px;
+    background-color: white;
+    border: none;
+    font-weight: 50;
+    color: rgb(81, 77, 77)
+}
+
+.log{
+    margin-left:20px;
+}
+
+.img3{
+    width: 40px;
+    height: auto;
+}
+
+.dine,.deli,.night{
+    font-size: 30px;
+    color: rgb(126, 111, 111);
+}
+
+.dining{
+    margin-left: 500px
+}
+.Delivery{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.collection{
+    height: 500px;
+    background-color: pink;
+}
+
+.second{
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}

@@ -1,0 +1,17 @@
+h1{
+    color: red;
+    background-color: aqua;
+}
+li{
+    color:blueviolet;
+    background-color: rgb(252, 255, 84);
+}
+
+.first{
+    color: red;
+    background-color: aqua;
+}
+.second{
+    color: blue;
+    background-color: greenyellow;
+}

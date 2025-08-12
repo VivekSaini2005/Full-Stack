@@ -1,0 +1,49 @@
+/* p{
+    direction: rtl;
+    unicode-bidi: bidi-override;
+} */
+p{
+    vertical-align: sub;
+}
+
+span{
+    vertical-align: super;
+}
+
+h2 {
+  text-decoration-line: underline;
+  text-decoration-color: red;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 2px;
+}
+p {
+  text-indent: 30px;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  word-spacing: 4px;
+  white-space: nowrap;
+}
+h1 {
+  text-shadow: 5px 5px 4px gray;
+}
+/* div {
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+} */
+div{
+  box-shadow: inset 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+    .btn {
+      background-color: blue;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      font-size: 18px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: darkblue;
+      transform: scale(1.1);
+    }
+     
