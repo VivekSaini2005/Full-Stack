@@ -2,6 +2,11 @@ DOM: Document object Model
 
 The DOM (Document Object Model) is a way to represent a web page so that programs (like JavaScript) can interact with it.
 
+Our HTML code convert into DOM in which we integrate JS into HTML code. Pura html code object mei change hoga or fir wo object JS ko dega or JS mei hum object ko manipulate krna jante hai. Har ek chez object ki tarah treat hogi <html>, <p>, <div> , etc. yaha tk ki attribute bhi object ki tarah treat honge.
+
+How a tag convert into object.
+
+
 * A browser takes your HTML document and turns it into the DOM.
 
 With the object model, JavaScript gets all the power it needs to create dynamic HTML:
@@ -17,11 +22,11 @@ With the object model, JavaScript gets all the power it needs to create dynamic 
 
 
 
-*******************************************************************
+*********************************************************************************
 
 
 
-1: Accessing Element:
+1: Accessing Element in JS:
 
 
 a: Accessing by ID:
@@ -32,6 +37,7 @@ b: Accessing by Class Name:
    Method: document.getElementsByClassName(className)
    Description: Returns a live HTMLCollection of all elements with the 
    specified class name.
+   agr ek class name ke bhaut sare tag hai tooh unko hum array ki tarah access krte hai. obj[0] for first tag with same class name, obj[1] for second tag with same class name, ... Then now manipulate as obj[0].id="first", means same name wale class ke first tag k data ko manipulate kro.
 
 c: Accessing by CSS Selectors:
    i: Single Element:
@@ -39,10 +45,10 @@ c: Accessing by CSS Selectors:
       Description: Returns the first element matching the specified CSS 
       selector.
     
-    ii: Multiple Elements:
-        Method: document.querySelectorAll(selector)
-        Description: Returns a static NodeList of all elements matching the 
-        specified CSS selector.
+   ii: Multiple Elements:
+      Method: document.querySelectorAll(selector)
+      Description: Returns a static NodeList of all elements matching the 
+      specified CSS selector.
     
 d: Accessing by Tag Name
    Method: document.getElementsByTagName(tagName)

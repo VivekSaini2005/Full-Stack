@@ -28,18 +28,19 @@
 
 // const obj = document.querySelectorAll('.header1')
 
-//1:  obj.forEach((val)=>{
+//  obj.forEach((val)=>{
 //     console.log(val)
 //     })
+//     Output:
+    
 
-
-// 2: for(let val of obj)
+//  for(let val of obj)
 // console.log(val)
 
-// 3: for(i=0;i<obj.length;i++)
+//  for(i=0;i<obj.length;i++)
 //     obj[i].style.color = "red";
 
-//  Convert NodeList into array
+//  Convert NodeList into array for allpy map prop
 //  Array.from(obj)
 
 
@@ -49,8 +50,9 @@
 // ****************************
 
 // const obj = document.getElementsByTagName('h1');
-
+// console.log(obj);
 // let team = document.getElementsByTagName('li');
+
 
 // How to iterate over it
 // 1:for(let i=0;i<team.length;i++)
@@ -59,7 +61,7 @@
 // 2: for(let val of team)
     // console.log(val)
 
-// 3: Array.from(team).forEach((val)=>{
+// 3: Array.from(team).forEach((val)=>{  //phale array mei change kro fir forEach lagao.
 // console.log(val);
 //  })
 
@@ -76,6 +78,7 @@
 
 // const par = document.querySelector('ul');
 // console.log(par);
+// console.log(par.parentNode);
 // console.log(par.childNodes);
 // console.log(par.children);
 // console.log(par.firstChild);
