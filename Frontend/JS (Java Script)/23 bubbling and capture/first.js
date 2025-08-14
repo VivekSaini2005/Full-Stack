@@ -29,22 +29,22 @@
 
 // const buttons = document.querySelectorAll('button');
 // const body = document.body;
-// // console.log(buttons);
+// console.log(buttons);
 
 // buttons.forEach((button)=>{
-   
+//     console.log(button);
 //     button.addEventListener('click', ()=>{
 //         body.style.backgroundColor = button.id;
 //     })
-
 // })
+
 
 
 const root = document.getElementById('root');
 
 
 root.addEventListener('click',(event)=>{
-    // console.log(event.target.tagName)
+    console.log(event.target.tagName)
     if(event.target.tagName === 'BUTTON')
     document.body.style.backgroundColor = event.target.id;
 })

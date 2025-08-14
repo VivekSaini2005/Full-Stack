@@ -20,6 +20,7 @@ button.addEventListener('click', ()=>{
     re.textContent = "Result: "+result;
 })
 
+// input.value  : jo value input di hai usko store krke rakhega string format mei.
 
 // BMI Calculator
 // Dhaej Calculator(Male)

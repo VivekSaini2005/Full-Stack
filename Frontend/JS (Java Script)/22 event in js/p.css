@@ -1,0 +1,16 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+body{
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    height: 50px;
+    width: 70px;
+}

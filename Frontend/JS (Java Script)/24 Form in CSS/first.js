@@ -39,10 +39,10 @@ form.addEventListener('submit',(event)=>{
     // const third = document.getElementById("third");
     // console.log(third.value);
 
-    const data = new FormData(form);
+    // const data = new FormData(form);
     
-    for(let [key,value] of data.entries())
-        console.log(key, value);
+    // for(let [key,value] of data.entries())
+    //     console.log(key, value);
 
     // console.log(Array.from(data.keys()));
     // console.log(Array.from(data.values()));
@@ -51,10 +51,10 @@ form.addEventListener('submit',(event)=>{
 
 
 
-    // const result = document.getElementById('result');
-    // result.innerText = `${first.value} ${second.value} is a good Boy`;
+    const result = document.getElementById('result');
+    result.innerText = `${first.value} ${second.value} is a good Boy`;
 
-    // document.body.append(result);
+    document.body.append(result);
 
 
 

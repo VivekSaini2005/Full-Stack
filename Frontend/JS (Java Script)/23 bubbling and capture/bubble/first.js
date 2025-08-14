@@ -8,21 +8,21 @@ child.addEventListener('click', (event)=>{
     console.log("child Clicked"); 
     // event.stopPropagation();
     // console.log(event.target);
-},false)
+},true)
 
 
 
 parent.addEventListener('click', (event)=>{
     console.log("parent Clicked");
-    event.stopPropagation();
+    // event.stopPropagation();
     // console.log(event.target);
     // console.log(event.currentTarget);
-},false)
+},true)
 
 grandParent.addEventListener('click', (event)=>{
     console.log("grandParent Clicked");
-    // console.log(event.currentTarget);
-},false)
+    console.log(event.currentTarget);
+},true)
 
 // addEventListener(first_event, callback, capture);
 

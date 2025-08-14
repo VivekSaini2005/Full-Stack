@@ -37,4 +37,11 @@ setInterval(generatQuote,2000);
 
 //  Chnage the background color in every 5 second
 
-
+function backcolor(){
+  const red = Math.floor(Math.random()*256);
+  const blue = Math.floor(Math.random()*256);
+  const green = Math.floor(Math.random()*256);
+  const b = document.getElementById("b");
+  b.style.backgroundColor = "rgb("+red+","+green+","+blue+")";
+}
+setInterval(backcolor,2000);
