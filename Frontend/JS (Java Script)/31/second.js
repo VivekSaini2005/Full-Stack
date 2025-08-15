@@ -30,20 +30,18 @@ async function greet() {
     
     console.log("Hello I greet You"); 
 
-    const [data1,data2] = await Promise.all([test1(),test2()]);
+    // const [data1,data2] = await Promise.all([test1(),test2()]);
+    // console.log(data1);
+    // console.log(data2);
+    const data1 = await test1();
     console.log(data1);
+
+    const data2 = await test2();
     console.log(data2);
 }
 
 greet();
-// console.log("Hello Coder Army");
-// console.log("Kaise ho aap sab log");
+console.log("Hello Coder Army");
+console.log("Kaise ho aap sab log");
 
 
-
-
-
-// 
-
-
-        

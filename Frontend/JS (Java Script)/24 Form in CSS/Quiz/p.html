@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GK Quiz – 5 Questions</title>
+  <link rel="stylesheet" href="p.css">
+</head>
+<body>
+  <form action="submit" class="quiz">
+    <div class="header">
+      <div>
+        <div class="title">General Knowledge Quiz</div>
+        <div class="subtitle">Single-correct MCQs · 5 Questions</div>
+        <div class="result" id="scoreArea">Score: 0/5</div>
+      </div>
+    </div>
+
+    <!-- Q1 -->
+    <div class = q1>
+      <div class = "ques">1) What is the capital of France?</div>
+      <div class="options">
+        <label class="option"><input type="radio" name="q1" value="A" /> Berlin</label>
+        <label class="option"><input type="radio" name="q1" value="B" /> Madrid</label>
+        <label class="option"><input type="radio" name="q1" value="C" /> Paris</label>
+        <label class="option"><input type="radio" name="q1" value="D" /> Rome</label>
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="q2">
+      <div class = "ques">2) Which is the largest planet in our solar system?</div>
+      <div class="options">
+        <label class="option"><input type="radio" name="q2" value="A" /> Earth</label>
+        <label class="option"><input type="radio" name="q2" value="B" /> Jupiter</label>
+        <label class="option"><input type="radio" name="q2" value="C" /> Saturn</label>
+        <label class="option"><input type="radio" name="q2" value="D" /> Neptune</label>
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="q3">
+      <div class = "ques">3) What is the chemical symbol for Gold?</div>
+      <div class="options">
+        <label class="option"><input type="radio" name="q3" value="A" /> Ag</label>
+        <label class="option"><input type="radio" name="q3" value="B" /> Au</label>
+        <label class="option"><input type="radio" name="q3" value="C" /> Gd</label>
+        <label class="option"><input type="radio" name="q3" value="D" /> Go</label>
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="q4">
+      <div class = "ques">4) Who wrote "Romeo and Juliet"?</div>
+      <div class="options">
+        <label class="option"><input type="radio" name="q4" value="A" /> Charles Dickens</label>
+        <label class="option"><input type="radio" name="q4" value="B" /> William Shakespeare</label>
+        <label class="option"><input type="radio" name="q4" value="C" /> Mark Twain</label>
+        <label class="option"><input type="radio" name="q4" value="D" /> Jane Austen</label>
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="q5">
+      <div class = "ques">5) What is the fastest land animal?</div>
+      <div class="options">
+        <label class="option"><input type="radio" name="q5" value="A" /> Lion</label>
+        <label class="option"><input type="radio" name="q5" value="B" /> Cheetah</label>
+        <label class="option"><input type="radio" name="q5" value="C" /> Horse</label>
+        <label class="option"><input type="radio" name="q5" value="D" /> Greyhound</label>
+      </div>
+      <div class="explain" hidden>Cheetahs can sprint up to around 100–120 km/h in short bursts.</div>
+    </div>
+
+    <div class="controls">
+      <button id="submitBtn">Submit</button>
+      <button id="resetBtn" class="ghost" type="button">Reset</button>
+      <span id="message" class="subtitle"></span>
+    </div>
+
+    <footer>Tip: Select one option per question, then hit Submit.</footer>
+</form>
+<script src="p.js"></script>
+</body>
+</html>

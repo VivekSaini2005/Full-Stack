@@ -64,6 +64,35 @@ function deliverOrder(droplocation){
 }
 
 
+// placeOrder(cart)
+// .then(order=>preparingOrder(order))
+// .then(foodDetails=>pickupOrder(foodDetails))
+// .then(droplocation=>deliverOrder(droplocation))
+// .catch(error=>console.log(error));
+
+// yeah thoda kam samaj ata hai
+// or niche wala acche se samaj ata hai.
+
+// const order = placeOrder(cart);
+// const foodDetails = preparingOrder(order);
+// const droplocation = pickupOrder(foodDetails);
+// deliverOrder(droplocation);
+
+// lenkin hum isko directly use nhi kr skte hme pata hai ki yaha callback function hai jo time le raha hai tooh order ki full detail aaygi nhi or yeah preparingOrder(order) ko call kr dega.
+// isliye hum await ka use krte hai or yeah await wale async function mei hone chahiye tabhi kam karega. await ko function mei use krte hai ase khule mei use nhi kr skte.
+
+// async function greet() {
+//     const order = await placeOrder(cart);  // await apne code ke niche walo ko nhi chalata unko wait karata hai. Wait karega jab tk data data na aa jye.
+//     const foodDetails = await preparingOrder(order);
+//     const droplocation = await pickupOrder(foodDetails);
+//     deliverOrder(droplocation);
+// }
+// greet()
+
+
+
+// How to handle error in it.
+
 async function greet() {
 
 
@@ -82,11 +111,6 @@ async function greet() {
 greet();
 
 
-// placeOrder(cart)
-// .then(order=>preparingOrder(order))
-// .then(foodDetails=>pickupOrder(foodDetails))
-// .then(droplocation=>deliverOrder(droplocation))
-// .catch(error=>console.log(error));
 
 function test1(){
 

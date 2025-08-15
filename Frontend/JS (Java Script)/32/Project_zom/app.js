@@ -1404,28 +1404,29 @@ getrestaurant(restaurants);
 
 document.getElementById("Alcohol").addEventListener('click',()=>{
     
-    const result = restaurants.filter((obj)=>obj.alcohol);
-    document.getElementById('root').replaceChildren();
+    const result = restaurants.filter((obj)=>obj.alcohol); // obj.alcohol true ya false return karega.
+    // document.getElementById('root').innerHTML = ""; // alcohol wale button pr click krne pr sara data erase kr do or phir jo alcohol wale hai unko print karao.
+    document.getElementById('root').replaceChildren(); // yeah bhi same kaam krta hai sab ko hata dega.
     getrestaurant(result);
 
 })
 
 document.getElementById("Rating").addEventListener('click',()=>{
     
-    const result = restaurants.filter((obj)=>obj.rating>4.5);
+    const result = restaurants.filter((obj)=>obj.rating>4.5);// filter the rating.
     document.getElementById('root').replaceChildren();
     getrestaurant(result);
 
 })
 
 document.getElementById('Filters').addEventListener('click',()=>{
-    document.getElementById("filterPopup").classList.remove("hidden");
+    document.getElementById("filterPopup").classList.remove("hidden"); // css mei hidden class none hai usko remove kr do filter pr click krne per kyuki filter wale ki class hidden hai.
 })
 
 
-document.getElementById('applyFilter').addEventListener('click',()=>{
+document.getElementById('applyFilter').addEventListener('click',()=>{ // filterPopup mei ek apply button hai usko action mei lao.
    
-    const element = document.querySelector('input[name="filterOption"]:checked');
+    const element = document.querySelector('input[name="filterOption"]:checked'); //jo checked hoga wo automatically select ho jayga, yeah format attribute ke basis pr select krne ka.
     const answer = element.value;
 
     if(answer==="rating"){
@@ -1442,7 +1443,7 @@ document.getElementById('applyFilter').addEventListener('click',()=>{
     }
 
 
-    document.getElementById('root').replaceChildren();
+    document.getElementById('root').replaceChildren(); // isse popup wala remove ho jayga filter apply krne k baad.
     document.getElementById("filterPopup").classList.add("hidden");
     getrestaurant(restaurants);
 })
