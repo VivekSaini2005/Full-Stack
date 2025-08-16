@@ -1,16 +1,30 @@
+// let m: any;
+// m = 20;
+// console.log(m.toUpperCase()); //error nhi dega
+
+// // let var2: unknown;
+// // var2 = 10;
+// // console.log(var2.toUpperCase()); //error dega likhte samay "'var2' is of type 'unknown'."
+
+// let var2: unknown;
+// var2 = 10;
+// if(typeof var2 === 'string')
+// console.log(var2.toUpperCase()); //ab likhte samay error nhi dega.
+
+
 // interface Person{
 //     name:string,
 //     age:number,
 //     gender:string,
-//     aadhar?:number
+//     aadhar?:number  //?-> optional keyword isse lagane se jab bhi object banaoge tooh aadhar likho ya mt likho koi farak nhi padega.
 // }
 
 
 // const obj:Person = {
-//     name:"Rohit",
-//     age:20,
-//     gender:"Male",  
-// }
+//     name: "Rohit",
+//     age: 20,
+//     gender: "Male",
+// }// agr aadhar ? nhi hota tooh jusko obj mei likhna hi padta werna error deta.
 
 
 // // Latest example
@@ -21,28 +35,29 @@
 //     balance:number
 // }
 
-// const obj2: Readonly<customer> = {
+// const obj2: Partial<customer> = {
 //     name:"Rohit",
 //     balance:210,
-//     age:20
 // }
+
+// obj2.name = "Vivek"; //error dega likhte samay.
 
 // // Partial: All property becomes optional
 // // Required: ALl property should be filled
 // // Readonly: The property can only be read, write option is not available
 
 
-// // array of Objects
+// array of Objects
 
-// interface peopele {name:string,age:number};
+// interface people {name:string,age:number};
 // interface manager {salary:number,id:string}
 
-// const arr: (peopele | manager)[] = [{name:"Rohit",age:20},{name:"Mohit",age:18}, {salary:20,id:"2321"}]
+// const arr: (people | manager)[] = [{name:"Rohit",age:20},{name:"Mohit",age:18}, {salary:20,id:"2321"}]
 
-// // function in TS
+// // // function in TS
 
 
-// function greet(a:number):number{
+// function greet(a:number):number{ //first number represent data-type of a, second number represent return data-type of function.
 //     console.log(a);
 //     return a+5;
 // }
@@ -50,13 +65,13 @@
 // console.log(greet(10));
 
 
-// function meet(msg:string,val:number):void{
+// function meet(msg:string,val:number):void{ //passing two argument with no return type'
 //     console.log(msg,val);
 // }
 
 
 // meet("Anshika Verma", 4);
-// // default parameter
+// default parameter
 // function neet(msg:string = "Jit"){
 //     console.log(msg);
 // }
@@ -65,8 +80,7 @@
 // neet("Bittu");
 
 
-// // Optional Parameter
-
+// // // Optional Parameter
 // function GATE(person?:string){
 //     console.log(person||"Mohan");
 // }
@@ -75,7 +89,7 @@
 // GATE();
 
 
-// // arrow function
+// // // arrow function
 
 // const sum = (a:number,b:number):number=>{
 //     return a+b;
@@ -87,16 +101,15 @@
 // // callback function
 
 
-// type chill = (amount:number)=>void;
 
 // const sqaureroot = (val:number)=>{
-//    return val*val;
+//        return val*val;
 // }
-
-
-
-// function placeOrder(order:number,callback: chill):void{
     
+    
+// type chill = (amount:number)=>void;
+
+// function placeOrder(order:number,callback: (amount:number)=>void):void{
 //     const amount:number = order+10;
 //     callback(amount);
 // }
@@ -125,7 +138,6 @@
 
 
 // // extend keyword
-
 // interface human{
 //     name:string,
 //     age:number
@@ -141,7 +153,7 @@
 //     position: string
 // }
 
-// const obj8:Teacher = {
+// const obj:Teacher = {
 //     name :"Rohit",
 //     age: 20,
 //     salary:"chillar",

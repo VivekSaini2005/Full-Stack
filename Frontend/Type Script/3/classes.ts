@@ -1,75 +1,71 @@
-class Person{
-    name:string;
-    age:number;
+// Class is Blueprint of an object
+// class Person{
+//     name:string;
+//     age:number;
 
-    constructor(name:string,age:number){
-        this.name = name;
-        this.age = age;
-    }
+//     constructor(name:string,age:number){
+//         this.name = name;
+//         this.age = age;
+//     }
 
-    greet():void{
-        console.log(`hi ${this.name}`);
-    }
-}
+//     greet():void{
+//         console.log(`hi ${this.name}`);
+//     }
+// }
 
-// Blueprint of an object
+// const obj1 = new Person("Rohit",20);
+// const obj2 = new Person("Nitin",11);
+// console.log(obj1);
+// console.log(obj2);
+// console.log(obj1.name);
+// obj1.greet();
 
-
-const obj1 = new Person("Rohit",20);
-const obj2 = new Person("Nitin",11);
-console.log(obj1);
-console.log(obj2);
-
-
-console.log(obj1.name);
-obj1.greet();
 
 // public private protected
+// class Customer{
+//     public name:string; // class k bahar bhi access kr skte hai.
+//     private age:number; // class k bahaar access nhi kr skte.
+//     protected balance:number; // class k bahaar access nhi kr skte.
 
-class Customer{
-    public name:string;
-    private age:number;
-    protected balance:number;
+//     constructor(name:string,age:number,balance:number){
+//         this.name = name;
+//         this.age = age;
+//         this.balance = balance
+//     }
 
-    constructor(name:string,age:number,balance:number){
-        this.name = name;
-        this.age = age;
-        this.balance = balance
-    }
+//     meet():number{
+//        this.age = this.age+10;
+//        return this.age;
+//     }
+// }
 
-    meet():number{
-       this.age = this.age+10;
-       return this.age;
-    }
-}
+// const P1 = new Customer("Deepak",20,420);
+// console.log(P1.name);
 
-const P1 = new Customer("Deepak",20,420);
-console.log(P1.name);
+// console.log(P1.meet());
+// // console.log(P1.balance); //access nhi hoga kyuki balance protected hai.
 
-console.log(P1.meet());
-// console.log(P1.balance);
+// class Employee extends Customer {
+//     salary:number;
 
-class Employee extends Customer {
-    salary:number;
+//     constructor(salary:number,name:string,age:number,balance:number){
+//         super(name,age,balance);
+//         this.salary = salary;
+//     }
 
-    constructor(salary:number,name:string,age:number,balance:number){
-        super(name,age,balance);
-        this.salary = salary;
-    }
+//     greet():void{
+//         console.log(this.balance);
+//     }
 
-    greet():void{
-        console.log(this.balance);
-    }
+//     meet():number{
+//         console.log("Hello Coder armu");
+//         return 10;
+//     }
+// }
 
-    meet():number{
-        console.log("Hello Coder armu");
-        return 10;
-    }
-}
-
-const E1 = new Employee(420,"Rohit", 20,320);
-console.log(E1.meet());
-console.log(E1.salary);
+// const E1 = new Employee(420,"Rohit", 20,320);
+// console.log(E1.meet());
+// console.log(E1.salary);
 
 
 // Generic: Template

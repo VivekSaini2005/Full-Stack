@@ -34,7 +34,8 @@ arr3.push(10);
 let arr4:(string | number | boolean)[] = ["rohit",10,false,11];
 
 
-let tuple:[string,number,number] = ["Rohit",10,11];
+let tuple:[string,number,number] = ["Rohit",10,11]; // store like tuple means fixed size array with initialized data-type
+// string-Rohit , number - 10 , number - 10.
 
 
 // Objects

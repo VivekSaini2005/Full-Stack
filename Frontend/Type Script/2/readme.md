@@ -97,7 +97,7 @@ Variable declarations without initialization (if required by the language).
 
 <!-- Runtime refers to the phase when the program is executed after it has been compiled (or interpreted). -->
 
-<!-- Errors detected during this phase are called runtime errors.
+Errors detected during this phase are called runtime errors.
 Examples of runtime errors include:
 Dividing by zero.
 Accessing undefined variables or null references.
@@ -106,7 +106,7 @@ Examples of Runtime Activities:
 
 Executing code instructions.
 Handling user inputs.
-Interacting with APIs or databases -->
+Interacting with APIs or databases
 
 
 

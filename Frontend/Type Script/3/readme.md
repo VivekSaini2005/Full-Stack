@@ -8,13 +8,15 @@
 2: tsc --version
 
 <!-- How to run TS file -->
-tsc file_name
-tsc yourfile.ts --target es2016
+tsc file_name    <!-- isse ek file_name.js create ho jaygi jisme let ko var bna rakha hoga yeah isliye hoga kyuki hamare browser mei bhaut sare js version hai tooh yeah compiler old wale js mei convert kr deta hai, tooh hamko isko batana padega ki kis version mei convert krna hai.>
+tsc yourfile.ts --target es2016 <!--2016 wale version mei convert kr do.-->
+
 
 <!-- Intialize config file -->
 tsc --init
+<!-- isko es2016 set kr do hamesa k liye -->
 
-<!-- run tsc -->
+tsc <!-- command dalo apne app compile ho jayga.-->
 
 <!-- Every JS file will be valid TS -->
 <!-- If there is an error in TS, still it will compile it and convert it into JS file -->
@@ -23,9 +25,11 @@ tsc --init
 
 <!-- watch mode -->
 tsc --watch
+code automatically ts se js mei convert hota rahega line by line. or isse exit krne k liye ctrl+c
 
 <!-- How to quit it -->
 ctrl+C
+<!-- use to exit watch mode -->
 
 
 <!-- How to deal with number -->
@@ -61,13 +65,14 @@ any: if we don't initilize the value initially
 
 <!-- any -->
 let value: any = 42;
-Represents any type of value. When a variable has the any type, it can be assigned any value, and no type checking is done.
+Represents any type of value(behave as js). When a variable has the any type, it can be assigned any value, and no type checking is done.
 
 
 <!-- unknown -->
 The any and unknown types in TypeScript are both used to represent values of any type.
-
 The unknown type is safer than any because you cannot perform operations on an unknown value without first narrowing its type through type checks.
+
+unknown mei koi bhi operation nhi lga skte(error dega likhte samay) agr operation value ki type se match na ho, jabki any mei laga skte hai 
 
 
 <!-- Non Primitive Data type -->
