@@ -1,0 +1,23 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VivekSaini2005/Full-Stack.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VivekSaini2005/Full-Stack/issues"
+  },
+  "homepage": "https://github.com/VivekSaini2005/Full-Stack#readme",
+  "dependencies": {
+    "parcel": "^2.15.4",
+    "react": "^19.1.1"
+  }
+}
