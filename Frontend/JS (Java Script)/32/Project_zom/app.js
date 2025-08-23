@@ -1426,7 +1426,7 @@ document.getElementById('Filters').addEventListener('click',()=>{
 
 document.getElementById('applyFilter').addEventListener('click',()=>{ // filterPopup mei ek apply button hai usko action mei lao.
    
-    const element = document.querySelector('input[name="filterOption"]:checked'); //jo checked hoga wo automatically select ho jayga, yeah format attribute ke basis pr select krne ka.
+    const element = document.querySelector('input[name="filterOption"]:checked'); //jo checked hoga wo automatically select ho jayga, yeah format attribute ke basis pr select krne ka hai.
     const answer = element.value;
 
     if(answer==="rating"){
@@ -1451,6 +1451,173 @@ document.getElementById('applyFilter').addEventListener('click',()=>{ // filterP
 
 
 
-        
+// Chatgpt easy to understand.   
+// Restaurant ka data array (objects ke form me)
+// const restaurants = [
+//     // Example object (aisa format hoga)
+//     // {
+//     //   name: "Dominos",
+//     //   rating: 4.7,
+//     //   food_type: "Pizza",
+//     //   price_for_two: 500,
+//     //   location: "Noida",
+//     //   distance_from_Customer_house: 3,
+//     //   alcohol: true,
+//     //   image: "dominos"
+//     // }
+// ]
+
+
+// // Function jo restaurants ko screen pe print karega
+// function getrestaurant(restaurants){
+
+//     const root = document.getElementById('root'); // root div jaha sab cards append honge
     
+//     // Har ek restaurant ke liye ek card banao
+//     restaurants.forEach(restaurant => {
+         
+//         // Create a card (outer div)
+//         const card = document.createElement('div');  
+//         card.classList.add('card'); // CSS class 'card' add kar di
+
+
+//         // 🔹 Image add karna
+//         const image = document.createElement("img");
+//         image.src = `Images/${restaurant.image}.jpeg`; // restaurant object se image li
+
+
+//         // 🔹 Card-content wrapper
+//         const Card_content = document.createElement('div');
+//         Card_content.classList.add('card-content');
+
+
+//         // 🔹 Card header (name + rating)
+//         const Card_header = document.createElement('div');
+//         Card_header.classList.add('card-header');
+
+//         const h3 = document.createElement('h3');
+//         h3.textContent = restaurant.name; // Restaurant ka naam
+
+//         const rate = document.createElement('span');
+//         rate.textContent = "Rating: " + restaurant.rating; // Rating print karo
+//         rate.classList.add('rating');
+
+//         Card_header.appendChild(h3);   // header me name daala
+//         Card_header.appendChild(rate); // header me rating daala
+
+
+//         // 🔹 Card footer (food type + price)
+//         const Card_footer = document.createElement('div');
+//         Card_footer.classList.add('card-footer');
+       
+//         const food = document.createElement('span');
+//         food.textContent = restaurant.food_type; // Example: Pizza
+
+//         const price = document.createElement('span');
+//         price.textContent = "₹" + restaurant.price_for_two; // Example: ₹500
+
+//         Card_footer.appendChild(food);
+//         Card_footer.appendChild(price);
+
+
+//         // 🔹 Card Location (address + distance)
+//         const card_location = document.createElement('div');
+//         card_location.classList.add('card-location');
+ 
+//         const location = document.createElement('span');
+//         location.textContent = restaurant.location; // Example: Noida
+
+//         const distance = document.createElement('span');
+//         distance.textContent = restaurant.distance_from_Customer_house + "km"; // Example: 3km
+    
+//         card_location.appendChild(location);
+//         card_location.appendChild(distance);
+
+
+//         // 🔹 Card ke content ko sahi order me add karo
+//         Card_content.appendChild(Card_header);
+//         Card_content.appendChild(Card_footer);
+//         Card_content.appendChild(card_location);
+
+//         // Final card assemble karo
+//         card.appendChild(image);
+//         card.appendChild(Card_content);
+
+//         // root me card append kar do
+//         root.appendChild(card);
+//     });
+
+// }
+
+
+
+// // Pehli baar sab restaurants show karo
+// getrestaurant(restaurants);
+
+
+
+// // 🔹 Filter: Alcohol button
+// document.getElementById("Alcohol").addEventListener('click',()=>{
+    
+//     // Sirf wahi restaurants lo jinke obj.alcohol true hai
+//     const result = restaurants.filter((obj)=>obj.alcohol);
+
+//     // Root ko clear kar do (purane cards hatado)
+//     document.getElementById('root').replaceChildren(); 
+
+//     // Filtered restaurants print karo
+//     getrestaurant(result);
+
+// })
+
+
+// // 🔹 Filter: Rating button
+// document.getElementById("Rating").addEventListener('click',()=>{
+    
+//     // Sirf wahi restaurants jinki rating 4.5 se zyada hai
+//     const result = restaurants.filter((obj)=>obj.rating > 4.5);
+
+//     // Root clear karke filtered result dikhado
+//     document.getElementById('root').replaceChildren();
+//     getrestaurant(result);
+
+// })
+
+
+// // 🔹 Filter Popup open karna
+// document.getElementById('Filters').addEventListener('click',()=>{
+//     // Filter button dabane par popup ko dikhado
+//     document.getElementById("filterPopup").classList.remove("hidden"); 
+// })
+
+
+// // 🔹 Apply Filter button (Popup ke andar)
+// document.getElementById('applyFilter').addEventListener('click',()=>{ 
+   
+//     // Jo option user ne select kiya hai use pakad lo
+//     const element = document.querySelector('input[name="filterOption"]:checked'); 
+//     const answer = element.value; // e.g. "rating", "highLow", "costLowHigh", "distance"
+
+//     // Different conditions ke hisaab se sorting lagao
+//     if(answer === "rating"){
+//         restaurants.sort((a,b)=>b.rating - a.rating); // rating high → low
+//     }
+//     else if(answer === "highLow"){
+//         restaurants.sort((a,b)=>b.price_for_two - a.price_for_two); // price high → low
+//     }
+//     else if(answer === "costLowHigh"){
+//         restaurants.sort((a,b)=>a.price_for_two - b.price_for_two); // price low → high
+//     }
+//     else if(answer === "distance"){
+//         restaurants.sort((a,b)=>a.distance_from_Customer_house - b.distance_from_Customer_house); // nearest first
+//     }
+
+//     // Root ko clear kardo aur popup hide kardo
+//     document.getElementById('root').replaceChildren(); 
+//     document.getElementById("filterPopup").classList.add("hidden");
+
+//     // Sorted restaurants display karo
+//     getrestaurant(restaurants);
+// })
+
     
